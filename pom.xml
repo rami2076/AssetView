@@ -58,6 +58,16 @@
 	</build>
 
 	<dependencies>
+
+		<!-- JavaFX -->
+		<dependency>
+			<groupId>javafx</groupId>
+			<artifactId>javafx</artifactId>
+			<version>${jfx-version}</version>
+			<scope>system</scope>
+			<systemPath>C:\tool\eclipse\neon\pleiades\java\8\jre\lib\ext\jfxrt.jar</systemPath>
+		</dependency>
+
 		<!-- SuperCsvAnnotation -->
 		<dependency>
 			<groupId>com.github.mygreen</groupId>
@@ -120,6 +130,8 @@
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
 		</dependency>
+
+
 
 	</dependencies>
 
