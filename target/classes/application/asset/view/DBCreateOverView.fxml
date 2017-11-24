@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.asset.controller.DBCreateController">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane>
+               <children>
+                  <Label layoutX="20.0" layoutY="5.0" text="データベースに新しいユーザを作成する" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="5.0" />
+                  <Button fx:id="isValidButton" layoutX="230.0" layoutY="59.0" mnemonicParsing="false" onAction="#isValid" text="check" />
+                  <TextField fx:id="userNameField" layoutX="20.0" layoutY="59.0" promptText="ユーザ名：3文字以上" />
+                  <Label layoutX="20.0" layoutY="31.0" text="新規作成ユーザを入力してください。" />
+                  <Button fx:id="registerButton" layoutX="230.0" layoutY="103.0" mnemonicParsing="false" onAction="#register" text="登録" />
+               </children>
+            </AnchorPane>
+          <AnchorPane>
+               <children>
+                  <TextArea fx:id="logArea" layoutX="-56.0" layoutY="-45.0" promptText="ログが表示されます。" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

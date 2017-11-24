@@ -68,6 +68,14 @@
 			<systemPath>C:\tool\eclipse\neon\pleiades\java\8\jre\lib\ext\jfxrt.jar</systemPath>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+		<dependency>
+			<groupId>org.controlsfx</groupId>
+			<artifactId>controlsfx</artifactId>
+			<version>9.0.0</version>
+		</dependency>
+
+
 		<!-- SuperCsvAnnotation -->
 		<dependency>
 			<groupId>com.github.mygreen</groupId>

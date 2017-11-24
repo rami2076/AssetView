@@ -22,7 +22,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 
-public class CreateContoroller {
+public class CreateController {
 
 	@FXML
 	private TableView<AssetBind> assetTable;
@@ -69,7 +69,7 @@ public class CreateContoroller {
 	// reference to Main
 	private MainApp mainApp;
 
-	public CreateContoroller() {
+	public CreateController() {
 
 	}
 

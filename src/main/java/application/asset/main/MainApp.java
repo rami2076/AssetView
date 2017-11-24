@@ -2,7 +2,7 @@ package application.asset.main;
 
 import java.io.IOException;
 
-import application.asset.controller.CreateContoroller;
+import application.asset.controller.CreateController;
 import application.asset.model.entity.AssetBind;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
@@ -56,7 +56,7 @@ public class MainApp extends Application {
 			createOverview.heightProperty();
 			rootLayout.setCenter(createOverview);
 			//Give the contoroller access to the main app
-			CreateContoroller createContoroller = loader.getController();
+			CreateController createContoroller = loader.getController();
 			createContoroller.setMainApp(this);
 
 
