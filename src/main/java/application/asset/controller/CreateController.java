@@ -3,6 +3,11 @@ package application.asset.controller;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
+
+import org.controlsfx.validation.Severity;
+import org.controlsfx.validation.ValidationSupport;
+import org.controlsfx.validation.Validator;
 
 import application.asset.main.MainApp;
 import application.asset.model.entity.Asset;
@@ -66,6 +71,8 @@ public class CreateController {
 	@FXML
 	private Label fileCountLabel;
 
+	@FXML
+	private TextField aaaatetFild;
 	// reference to Main
 	private MainApp mainApp;
 
@@ -75,6 +82,17 @@ public class CreateController {
 
 	@FXML
 	public void initialize() {
+
+		ValidationSupport support = new ValidationSupport();
+		Predicate<String> textPredicate = s -> ("OK").equals(s);
+		support.registerValidator(aaaatetFild, false,
+				Validator.createPredicateValidator(textPredicate, "Text is required", Severity.WARNING));
+		// refer
+		// https://qiita.com/monolith52/items/5a11ef104b0160229734
+
+
+
+
 		// TODO FIX:: Variable name declaration.
 		numberingColumn.setCellValueFactory(cellData -> cellData.getValue().iterateProperty());
 		//TODO FIX:: Variavle name declaration

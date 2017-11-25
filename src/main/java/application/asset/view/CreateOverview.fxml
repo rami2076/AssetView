@@ -10,7 +10,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.asset.controller.CreateController">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.asset.controller.CreateController">
    <children>
       <SplitPane dividerPositions="0.228328173374613" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -34,6 +34,7 @@
                   <Label layoutX="31.0" layoutY="308.0" text="ファイル名：" />
                   <Label layoutX="24.0" layoutY="160.0" text="listの方がいいかも" textFill="#bc5858" />
                   <Label layoutX="17.0" layoutY="283.0" text="現状一つのみ" textFill="#d06767" />
+                  <TextField fx:id="aaaatetFild" layoutX="60.0" layoutY="222.0" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0">
