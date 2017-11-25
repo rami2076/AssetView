@@ -82,7 +82,7 @@ public class CreateController {
 
 	@FXML
 	public void initialize() {
-
+		//test_test_test
 		ValidationSupport support = new ValidationSupport();
 		Predicate<String> textPredicate = s -> ("OK").equals(s);
 		support.registerValidator(aaaatetFild, false,
